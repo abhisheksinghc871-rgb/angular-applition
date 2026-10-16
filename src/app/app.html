@@ -1,0 +1,15 @@
+<header class="top">
+  <div class="wrap bar-top">
+    <a class="logo" routerLink="/"><span class="mark">₹</span>PennyPilot</a>
+    <nav aria-label="Main">
+      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Dashboard</a>
+      <a routerLink="/transactions" routerLinkActive="active">Entries</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <router-outlet />
+</main>
+
+<footer class="wrap foot-site">Your data stays in this browser. Nothing is sent anywhere.</footer>
